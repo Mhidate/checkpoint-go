@@ -1,6 +1,5 @@
 - Cara install air : go install github.com/cosmtrek/air@latest 
 - Ketik "air" di terminal untuk menjalankannya.Air bisa dibilang sebagai hot reload
-
 - u:mingo p:mingo1
 
   # Tampilan
@@ -9,7 +8,8 @@
   
   ![Screenshot (142)](https://github.com/Mhidate/checkpoint-go/assets/72199625/0620a797-315e-45b1-a7b0-e522fd127bf6)
 
-
+- Halaman Admin
+  
   ![Screenshot (134)](https://github.com/Mhidate/checkpoint-go/assets/72199625/af87714f-c3a3-452d-8c29-c6cc4a1b4add)
 
   ![Screenshot (135)](https://github.com/Mhidate/checkpoint-go/assets/72199625/ab043416-b7c0-408d-9c1f-c100fc165824)
