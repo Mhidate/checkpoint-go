@@ -1,0 +1,53 @@
+{{ define "content" }}
+<link rel="stylesheet" href="css/formdaftar.css" />
+
+
+<div class="mainc">
+  <form action="/simpan-pendaki" method="post">
+    <h1 class="form-title">  Form Pendaftaran</h1>
+
+    <div class="form-field">
+      <label>Scan gelang RFID lalu klik tombol refresh ID</label>
+      <input type="text" name="id" id="idgelang" value="{{.idgelang}}" placeholder="Scan gelang RFID lalu klik tombol refresh ID" readonly required/>
+    </div>
+    <div class="form-field">
+      <input type="number" name="grup" placeholder="Nomer Grup" required />
+    </div>
+    <div class="form-field">
+      <input name="nama" type="text" placeholder="Nama" required />
+    </div>
+    <div >
+      <label>Jenis Kelamin:</label><br>
+    
+      <input type="radio" id="laki-laki" name="jenis" value="L" >
+      <label for="laki-laki">Laki-laki </label><br>
+      
+      <input type="radio" id="perempuan" name="jenis" value="P" >   
+      <label  for="perempuan">Perempuan </label> 
+    </div>
+    <div class="form-field">
+      <input name="nik" type="number" placeholder="NIK" required/>
+    </div>
+    <div class="form-field">
+      <input name="alamat" type="text" placeholder="Alamat" required />
+    </div>
+    <div class="form-field">
+      <button name="daftar" class="form-button" type="submit">Daftar</button>
+      <button id="tombolRefresh" class="form-button" style="margin-left: 10px">
+        Refresh ID
+      </button>
+    </div>
+  </form>
+</div>
+
+
+
+<!-- untuk  penutup div di admin.html -->
+</div>
+
+<script src="script/admin-daftar.js">
+</script>
+
+
+
+{{end}}

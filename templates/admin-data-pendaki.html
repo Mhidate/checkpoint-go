@@ -1,0 +1,58 @@
+{{ define "content" }}
+<link rel="stylesheet" href="css/datapendaki.css">
+
+
+<div class="mainc">
+
+
+    <form id="pencarian" method="GET" action="/cari-pendaki">
+           <div class="search-box">
+               <input type="text" class="search-input" name="cari" id="searchInput"
+                   value="" placeholder="Cari..">
+               <button type="submit" class="search-button">
+                   <img src="images/icon-cari.svg" width="20" height="20" />
+               </button>
+           </div>
+    </form>
+
+    
+   <br>
+    <table class="table responsive-3">
+        <!-- <caption>
+            <form  id="formSelesai" style="display: none;" method="POST">
+            <a>Id gelang: </a><span id="idSelesai"></span><br>
+            <a>Nama: </a><span id="namaSelesai"></span><br>
+            <input type="text" id="idSelesai" name="idSelesai" readonly><br>
+            <a>Catatan (Jika tidak ada,ketik -) : </a>
+            <input type="text" id="catat" name="catat" >
+            <button class="b3" type="submit">Selesai<img src=images/button-selesai.svg width=20 height=20 /></button>
+        </form>
+    </caption> -->
+        <thead>
+            <tr>
+                <th class="column-primary" data-header="Pendaki"><span>Id gelang</span></th>
+                <th>Grup</th>
+                <th>Nama</th>
+                <th>Jenis kelamin</th>
+                <th>NIK</th>
+                <th>Alamat</th>
+                <th>Edit</th>
+                <th>Hapus</th>
+                <th>Selesai</th>
+            </tr>
+        </thead>
+        <tbody id="data2">
+            <!-- Data akan dimuat disini -->
+        </tbody>
+    </table>    
+
+
+</div>
+      
+<script src="script/admin-data-pendaki.js"></script>
+    
+
+<!-- untuk  penutup div di admin.html -->
+</div>  
+
+{{end}}

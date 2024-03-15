@@ -1,0 +1,147 @@
+.mainc {
+  background-color: #000000;
+  height: 500px;
+  width: 1100px;
+  margin: auto;
+  border-radius: 16px;
+  border: 5px solid rgb(3, 3, 3);
+  overflow: scroll;
+}
+
+.b1 {
+  margin-top: 2%;
+  margin-left: 1%;
+  height: 30px;
+  width: 30px;
+}
+
+.b1:hover {
+  background: rgb(255, 255, 255);
+  border-color: rgb(255, 0, 0);
+  transform: translateY(6px);
+
+}
+
+.b2 {
+  margin-top: 2%;
+  margin-left: 1%;
+  height: 30px;
+  width: 30px;
+}
+
+.b2:hover {
+  background: rgb(0, 0, 0);
+  border-color: #0eaa23;
+  transform: translateY(6px);
+
+}
+
+.b3 {
+  margin-top: 2%;
+  margin-left: 4%;
+  height: 30px;
+  width: 30px;
+
+}
+
+.b3:hover {
+  background: rgb(7, 7, 7);
+  border-color: #3153c5;
+  transform: translateY(6px);
+
+}
+
+/* Table */
+table {
+  margin: auto;
+  font-family: "Arial";
+  font-size: 12px;
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  border-bottom: 2px solid #130d0d;
+  border-left: 2px solid #130d0d;
+  border-right: 2px solid #130d0d;
+  border-top: 2px solid #130d0d;
+  padding: 9px 21px;
+}
+
+.table th,
+.table td:last-child {
+  border-right: px solid #cccccc;
+}
+
+.table td:first-child {
+  border-top: 2px solid #f30c0c;
+}
+
+caption {
+  caption-side: top;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  font-size: 16px;
+  color: #fafafa;
+}
+
+/* Table Header */
+.table thead th {
+  background-color: #0eaa23;
+  color: #ffffff;
+}
+
+/* Table Body */
+.table tbody td {
+  color: #353535;
+  background-color: #ffffff;
+}
+
+.text-center {
+  text-align: center;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 520px) {
+
+  /*Tabel Responsive 3*/
+  .responsive-3 {
+    width: 100%;
+  }
+
+  .responsive-3 thead th.column-primary {
+    width: 100%;
+  }
+
+  .responsive-3 thead th:not(.column-primary) {
+    display: none;
+  }
+
+  .responsive-3 td {
+    display: block;
+    width: auto;
+    text-align: right;
+    border-right: 1px solid #e1edff;
+  }
+
+  .responsive-3 thead th::before {
+    text-transform: uppercase;
+    font-weight: bold;
+    content: attr(data-header);
+  }
+
+  .responsive-3 thead th:first-child span {
+    display: none;
+  }
+
+  .responsive-3 td::before {
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    content: attr(data-header);
+  }
+}

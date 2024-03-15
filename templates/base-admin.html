@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.Title}}</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="script/jquery-3-6-0.js"></script>
+
+    <link rel="stylesheet" href="css/admin.css" />
+    <script src="script/tab-aktif.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="header">
+          <div class="list-item">
+            <marquee>
+              <span class="description-header">Selamat Datang Admin</span>
+            </marquee>
+          </div>
+          <div class="illustration">
+            <img src="images/icon-user.svg" alt="" />
+          </div>
+
+          <div class="mainl">
+            <div class="list-item">
+              <a class="{{ if eq .Title "Admin" }}active{{ end }}" href="/admin">
+                <img src="images/icon-dasboard.svg" alt="" class="icon" />
+                <span class="description">Dasboard</span>
+              </a>
+            </div>
+
+            <div class="list-item">
+              <a class="{{ if eq .Title "Halaman Daftar" }}active{{ end }}" href="/daftar">
+                <img src="images/icon-daftar.svg" alt="" class="icon" />
+                <span class="description">Daftar</span>
+              </a>
+            </div>
+
+            <div class="list-item">
+              <a class="{{ if eq .Title "Halaman Data Pendaki" }}active{{ end }}" href="/data-pendaki">
+                <img src="images/icon-data-pendaki.svg" alt="" class="icon" />
+                <span class="description">Data pendaki</span>
+              </a>
+            </div>
+
+            <div class="list-item">
+              <a class="{{ if eq .Title "Halaman Log Pendaki" }}active{{ end }}" href="/log-pendaki">
+                <img src="images/icon-log-pendaki.svg" alt="" class="icon" />
+                <span class="description">Log pendaki</span>
+              </a>
+            </div>
+            <div class="list-item">
+              <a class="{{ if eq .Title "Halaman Selesai" }}active{{ end }}" href="/selesai">
+                <img
+                  src="images/icon-pendaki-selesai.svg"
+                  alt=""
+                  class="icon"
+                />
+                <span class="description">Selesai</span>
+              </a>
+            </div>
+
+            <div class="list-item">
+              <a class="{{ if eq .Title "Halaman Hapus Lokasi" }}active{{ end }}" href="/hapus-lokasi">
+                <img src="images/icon-hapus-marker.svg" alt="" class="icon" />
+                <span class="description">Hapus lokasi </span>
+              </a>
+            </div>
+
+            <div class="list-item">
+              <a class="{{ if eq .Title "Tambah Lokasi" }}active{{ end }}" href="/tambah-lokasi">
+                <img src="images/icon-tambah-marker.svg" alt="" class="icon" />
+                <span class="description">Tambah lokasi</span>
+              </a>
+            </div>
+            <br /><br /><br />
+
+            <div class="list-item">
+              <a href="/logout">
+                <img src="images/icon-logout.svg" alt="" class="icon" />
+                <span class="description">Log Out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{block "content" .}}{{end}}
+    
+  </body>
+</html>

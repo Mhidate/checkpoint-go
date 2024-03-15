@@ -1,0 +1,32 @@
+{{ define "content" }}
+<link rel="stylesheet" href="css/selesai.css">
+
+<div class="mainc">
+    <!-- <a href='/ms-word'><button class="b3"><img src=images/button-word.svg width="25" height="25" /></button></a>	 -->
+    <a href='/ms-excel'><button class="b2"><img src=images/button-excel.svg width="25" height="25" /></button></a>
+    <a href='/hapus-selesai'><button class="b1"  method="GET"><img src=images/button-hapus.svg width="25" height="25" /></button></a>
+    
+    <table class="table responsive-3">
+        <caption>Tabel Data Pendaki Yang Sudah Selesai  </caption> 
+        <thead>
+            <tr>
+                <th class="column-primary" data-header="User"><span>Nama </span></th>
+                <th>Grup </th>
+                <th>Jenis kelamin </th>
+                <th>NIK </th>
+                <th>Alamat </th>
+                <th>Tanggal selesai  </th>
+                <th>Catatan  </th>
+            </tr>
+        </thead>
+        <tbody id="data">  
+
+        </tbody>
+
+    </table>
+
+ </div>
+<script src="script/admin-selesai.js"></script>
+ <!-- untuk  penutup div di admin.html -->
+</div>
+{{end}}

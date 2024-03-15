@@ -1,0 +1,64 @@
+{{ define "content" }}
+<!-- <script src="script/tabel-index.js"></script> -->
+<style>
+  .k a:visited {
+    color: blue;
+  }
+  .k a:hover{
+    color: darkblue;
+  }
+  
+</style>
+
+<p class="line anim-typewriter">Pendaki Sudah Sampai di Pos Berapa ?</p>
+
+<form method="GET" action="/Search">
+  <div class="search-box">
+    <input type="text" class="search-input" name="query" placeholder="Cari.."/>
+    <button type="submit" class="search-button">
+      <img src="images/icon-cari.svg" width="20" height="20" />
+    </button>
+  </div>
+</form>
+<br />
+
+
+<table class="table responsive-3">
+  <caption>
+    Tabel data pendaki
+  </caption>
+  <thead>
+    <tr>
+      <th class="column-primary" data-header="Pendaki"><span>Nama :</span></th>
+      <th>Grup :</th>
+      <th>Alamat :</th>
+      <th>POS :</th>
+      <th>Tanggal/Waktu :</th>
+      <th>Lokasi pos :</th>
+    </tr>
+  </thead>
+  <!-- <tbody id="data"> -->
+  <tbody>
+    {{range .results}}
+    <tr>
+        <td>{{.Nama}}</td>
+        <td>{{.Grup}}</td>
+        <td>{{.Alamat}}</td>
+        <td>{{.Pos}}</td>
+        <td>{{.Waktu}}</td>
+        <td><div class="k" ><a href='/peta'>Lihat</a></div></td>
+    </tr>
+    {{else}}
+    <tr>
+        <td colspan="9">Tidak ada data.</td>
+    </tr>
+    {{end}}
+    
+    
+  </tbody>
+</table>
+
+
+
+{{end}}
+

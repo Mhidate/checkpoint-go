@@ -1,0 +1,114 @@
+* {
+  font-family: "Ubuntu", Arial;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /*penulisan folder di luar css*/
+  background-image: url("../images/background-admin.webp");
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: #032a3b;
+  width: 260px;
+  padding: 24px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.mainl {
+  /* background-color: #EEEEEE;*/
+  flex-grow: 1;
+}
+
+.sidebar .description-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar .header .list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 10px;
+  border-radius: 8px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.sidebar .header .list-item .icon {
+  margin-right: 12px;
+}
+
+.sidebar .header .illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 10px 0 22px 0;
+  box-sizing: border-box;
+}
+
+.sidebar .mainl .list-item .description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #dae1e7;
+}
+
+.sidebar .mainl .list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 10px;
+  width: 212px;
+  box-sizing: border-box;
+  /*transition: all ease-in 10s;*/
+}
+
+.sidebar .mainl .list-item:hover {
+  background-color: #284a6e;
+  transition: all ease-in-out 1s;
+  transform: translateX(12px);
+}
+
+.list-item img {
+  /* margin-left: 10px; */
+  width: 25px;
+  height: 25px;
+}
+
+.illustration img {
+  margin-left: 15%;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+a.active {
+  width: 300px;
+  border-radius: 15px;
+  background-color: #1a3c61;
+  transform: translateX(12px);
+  border-bottom: 2px solid;
+  border-color: #dae1e7;
+}

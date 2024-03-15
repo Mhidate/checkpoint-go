@@ -1,0 +1,93 @@
+.mainc {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 700px;
+    margin: auto;
+    background: #032a3b;
+    border-radius: 16px;
+    border: 5px solid #fff;
+    overflow: auto;
+}
+
+/* input {
+    height: 45px;
+    width: 95%;
+    background-color: #032a3b;
+    color: #dae1e7;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #e9f2ff;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #c1d9fd;
+}
+
+input:valid {
+    border-color: greenyellow;
+}
+
+input:invalid {
+    border-color: orange;
+}
+
+input:not(:focus):invalid {
+    border-color: #c1d9fd;
+}
+
+.form-title {
+    text-align: center;
+    color: #e9f2ff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 12px;
+    margin-bottom: 38px;
+}
+
+.form-field {
+    margin-bottom: 13px;
+} */
+
+/*
+  .ptext::-webkit-input-placeholder {
+    color: white;
+  }
+  
+  /*support mozilla
+  .ptext:-moz-input-placeholder {
+    color: white;
+  }
+  
+  /*support internet explorer
+  .ptext:-ms-input-placeholder {
+    color: white;
+  */
+
+.form-button {
+    border: 3px solid #ffffff;
+    /* border: tebal[px] tipe[solid,dashed,dotted] warna[#hex, rgb()]; */
+    background: #333744;
+    /* set warna background menjadi transparan */
+    color: #ffffff;
+    /* ubah warna font */
+    font-size: 16px;
+    /* ubah ukuran font */
+    padding: 0.5em 1em 0.5em 1em;
+    /* padding: top right bottom left; */
+}
+
+.form-button:hover {
+    border-color: orange;
+    /* ubah tingkat transparansi saat cursor menuju button. 0.0 s.d 1.0 */
+}
+
+.form-button:active {
+    background: #032A3B;
+    border-color: greenyellow;
+    color: #ffffff;
+    /* set warna font menjadi putih */
+}

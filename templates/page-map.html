@@ -1,0 +1,25 @@
+{{ define "content"}}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+<br />
+
+<h1 style="color: white; text-align: center">Peta lokasi pos</h1>
+<div
+  id="mapid"
+  style="
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    z-index: 4;
+  "
+></div>
+
+<br />
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="script/page-map.js"></script>
+{{end}}

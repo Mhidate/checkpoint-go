@@ -1,0 +1,4 @@
+# air.toml
+root = "."
+command = "go run main.go"
+include_ext = [".html", ".css" ,".js"]

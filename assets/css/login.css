@@ -1,0 +1,158 @@
+body {
+  background: linear-gradient(-50deg,
+      #ee7752,
+      #e73c7e,
+      #23a6d5,
+      #15f1be,
+      #2a2f39,
+      #af04d1);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+form {
+  background: rgba(49, 82, 11, 0.06);
+  padding: 3em;
+  height: 320px;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    background: rgba(49, 82, 11, 0.06);
+    padding: 3em;
+    height: 50%;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+
+}
+
+input {
+  border-radius: 15px;
+  border: none;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 85%;
+  height: 35px;
+  padding: 0 0 0 30px;
+  background: #032a3b;
+  margin: 5px;
+  color: #fff;
+}
+
+.sig {
+  background: #032a3b;
+  color: #fff;
+  width: 150px;
+  height: 45px;
+  border-radius: 45px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sig:hover {
+  background: #fff;
+  transform: translateY(-7px);
+  color: black;
+}
+
+.par {
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.par-2 {
+  height: 80px;
+  width: 80px;
+  bottom: -30px;
+  right: -10px;
+}
+
+.par-1 {
+  background-image: url("../images/logoadmin.png");
+  background-size: 190px 110px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 5px 50px;
+  height: 120px;
+  width: 120px;
+  top: -60px;
+  right: 90px;
+}
+
+.par-4 {
+  margin-top: 4%;
+  margin-left: 20%;
+  background-image: url("../images/background-login.jpg");
+  background-size: 1200px 598px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 600px;
+  width: 900px;
+  bottom: 20px;
+  right: 550px;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.ajam {
+  margin-left: 50%;
+  margin-top: 90%;
+}

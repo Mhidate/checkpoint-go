@@ -1,0 +1,27 @@
+{{ define "content" }}
+<link rel="stylesheet" href="css/logpendaki.css" />
+<script src="script/admin-log-pendaki.js"></script>
+
+
+
+<div class="mainc">
+  <br />
+  <h1>
+    Tabel log pendaki berdasarkan grup
+  </h1>
+  <a>Hapus Data Berdasarkan Grup</a>
+    <form action="/hapus-log" method="POST">
+        <label for="grup">Grup:</label>
+        <input type="text" id="grup" name="grup" required><br><br>
+        <button type="submit"><a>Hapus data</a><img src=images/button-hapus.svg width="25" height="25" /></button>
+    </form>
+  <br /><br />
+  <div id="columns-container">
+    <!-- Container untuk divs kolom -->
+  </div>
+  
+<!-- untuk  penutup div di admin.html -->
+</div>
+
+
+{{end}}

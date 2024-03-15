@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>{{.Title}}</title>
+
+    <!-- <script src="script/refresh-tabel.js"></script> -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="script/tab-aktif.js"></script>
+  
+
+  </head>
+
+  <body>
+    <div class="topnav">
+        <a href="/" class="{{ if eq .Title "Beranda" }}active{{ end }}">Beranda</a>
+        <a href="/peta" class="{{ if eq .Title "Peta" }}active{{ end }}">Peta</a>
+        <a href="/tentang" class="{{ if eq .Title "Tentang" }}active{{ end }}">Tentang Kami</a>
+    </div>
+
+    {{block "content" .}}{{end}}
+  </body>
+  <div class="footer">
+    <marquee>
+      <p>Code With Heart &#9829;</p>
+    </marquee>
+  </div>
+</html>
